@@ -1,0 +1,10 @@
+{
+    "description": "Copy the URL of the current page to the clipboard at the click of a button.",
+    "author": "Fred Wenzel <fwenzel@mozilla.com>",
+    "dependencies": [
+        "jetpack-core"
+    ],
+    "version": "1.0",
+    "fullName": "Copy URL",
+    "name": "copy-url"
+}
