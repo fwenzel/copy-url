@@ -5,7 +5,7 @@
         "addon-kit",
         "api-utils"
     ],
-    "version": "1.1",
+    "version": "1.1.1",
     "fullName": "Copy URL",
     "id": "jid0-ZAHxU5e9sjK6VVQ8uP9TqpnlWuk",
     "description": "Copy the URL of the current page to the clipboard at the click of a button."
