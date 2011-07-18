@@ -1,4 +1,4 @@
-on('click', function(node, data) {
+self.on('click', function(node, data) {
     let url,
         canonical;
 
@@ -8,5 +8,5 @@ on('click', function(node, data) {
         url = document.location.href;
 
     // return url with leading and trailing whitespace removed.
-    postMessage(url.trim());
+    self.postMessage(url.trim());
 });
