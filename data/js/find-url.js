@@ -1,4 +1,7 @@
-self.on('click', function(node, data) {
+self.on('click', findUrl); // Context menu built-in click event.
+self.port.on('click', findUrl); // Click event from addons bar tab worker.
+
+function findUrl(node, data) {
     let url,
         canonical;
 
@@ -9,4 +12,4 @@ self.on('click', function(node, data) {
 
     // return url with leading and trailing whitespace removed.
     self.postMessage(url.trim());
-});
+}
