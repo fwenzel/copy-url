@@ -1,12 +1,12 @@
 {
-    "name": "copy-url",
-    "title": "Copy URL",
-    "id": "jid0-ZAHxU5e9sjK6VVQ8uP9TqpnlWuk@jetpack",
-    "description": "Copy the URL of the current page to the clipboard at the click of a button.",
-    "author": "Fred Wenzel <fwenzel@mozilla.com>",
-    "version": "1.3.1",
-    "main": "lib/main.js",
-    "permissions": {
-        "private-browsing": true
-    }
+  "name": "copy-url",
+  "title": "Copy URL",
+  "id": "jid0-ZAHxU5e9sjK6VVQ8uP9TqpnlWuk@jetpack",
+  "description": "Copy the URL of the current page to the clipboard at the click of a button.",
+  "author": "Fred Wenzel <fwenzel@mozilla.com>",
+  "version": "1.3.1",
+  "main": "lib/main.js",
+  "permissions": {
+    "private-browsing": true
+  }
 }
