@@ -1,6 +1,6 @@
 Copy URL Add-on
 ===============
-by Fred Wenzel ``<fwenzel@mozilla.com>``
+by Fred Wenzel ``<code@wenzel.io>``
 
 Copy URL is a Firefox add-on. It is the "little brother" of the [Copy
 ShortURL](http://github.com/fwenzel/copy-shorturl/) add-on.
