@@ -5,6 +5,11 @@
   "description": "Copy the URL of the current page to the clipboard at the click of a button.",
   "author": "Fred Wenzel <fwenzel@mozilla.com>",
   "version": "1.3.1",
+  "icon": {
+    "64": "data/img/copy-url-64.png",
+    "48": "data/img/copy-url-48.png",
+    "32": "data/img/copy-url-32.png"
+  },
   "main": "lib/main.js",
   "permissions": {
     "multiprocess": true,

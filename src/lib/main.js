@@ -5,9 +5,12 @@ notifications = require('sdk/notifications'),
 tabs = require('sdk/tabs'),
 ui = require('sdk/ui');
 
-const addon_name = 'Copy URL',
-addon_icon = data.url('img/world_link.png'),
-addon_icon32 = data.url('img/world_link32.png');
+const addon_name = 'Copy URL';
+const addon_icons = {
+  '16': data.url('img/copy-url-16.png'),
+  '32': data.url('img/copy-url-32.png'),
+  '64': data.url('img/copy-url-64.png')
+}
 
 
 exports.main = function(options, callbacks) {
@@ -15,7 +18,7 @@ exports.main = function(options, callbacks) {
   var btn = ui.ActionButton({
     id: 'copy-url',
     label: 'Copy URL',
-    icon: data.url('img/world_link.png'),
+    icon: addon_icons,
     onClick: function() {
       var tabworker = tabs.activeTab.attach({
         contentScriptFile: data.url('js/find-url.js'),
@@ -28,7 +31,7 @@ exports.main = function(options, callbacks) {
   // Add and hook up context menu
   var ctxMenu = cm.Item({
     label: addon_name,
-    image: addon_icon,
+    image: addon_icons['16'],
     context: cm.PageContext(),
     contentScriptFile: data.url('js/find-url.js'),
     onMessage: processUrl
@@ -39,7 +42,7 @@ function notify(txt) {
   notifications.notify({
     title: addon_name,
     text: txt,
-    iconURL: addon_icon32
+    iconURL: addon_icons['32']
   })
 }
 
