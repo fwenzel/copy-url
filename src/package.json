@@ -4,7 +4,7 @@
   "id": "jid0-ZAHxU5e9sjK6VVQ8uP9TqpnlWuk@jetpack",
   "description": "Copy the URL of the current page to the clipboard at the click of a button.",
   "author": "Fred Wenzel <code@wenzel.io>",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "icon": {
     "64": "data/img/copy-url-64.png",
     "48": "data/img/copy-url-48.png",

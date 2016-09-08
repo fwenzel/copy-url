@@ -54,14 +54,10 @@ function processUrl(data) {
     return;
   }
 
-  var url = data.url;
-
   // Add or remove hash according to setting.
-  var hasHash = (data.hash && url.match(data.hash + '$'));
-  if (prefs.includeHash && !hasHash) {
+  var url = data.url.split('#')[0];
+  if (prefs.includeHash && data.hash) {
     url += data.hash;
-  } else if (!prefs.includeHash && hasHash) {
-    url = url.slice(0, - data.hash.length);
   }
 
   clipboard.set(url);
