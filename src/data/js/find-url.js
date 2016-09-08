@@ -9,8 +9,12 @@ function findUrl(node, data) {
     // use canonical URL if it exists, current URL otherwise.
     canonical = document.querySelector(sel);
     if (!(canonical && (url = canonical.href || canonical.content)))
-      url = document.location.href;
+      url = window.location.href;
 
-    // return url with leading and trailing whitespace removed.
-    self.postMessage(url.trim());
+    // Return found URL, fallback URL and hash to add-on for processing.
+    self.postMessage({
+      'url': url.trim(),
+      'winLoc': window.location.href,
+      'hash': window.location.hash
+    });
   }
